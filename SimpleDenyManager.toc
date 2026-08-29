@@ -1,0 +1,7 @@
+## Interface: 11200
+## Title: SimpleDenyManager
+## Notes: Erlaubt oder verbietet Begleiter-Zauber auf dem Microbot-Server.
+## Author: Expert Developer
+## Version: 1.0
+## SavedVariables: SimpleDeny_States
+SimpleDenyManager.lua
