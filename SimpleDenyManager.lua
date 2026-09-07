@@ -251,7 +251,7 @@ end
 local function CreateMinimapButton()
     local button = CreateFrame("Button", "SDM_MinimapButton", Minimap) button:SetWidth(33) button:SetHeight(33) button:SetFrameLevel(MiniMapTrackingFrame:GetFrameLevel() + 1)
     button:EnableMouse(true) button:SetMovable(true) local icon = button:CreateTexture(nil, "BACKGROUND")
-    icon:SetWidth(21) icon:SetHeight(21) icon:SetTexture("Interface\\Icons\\INV_Misc_Gear_01") icon:SetPoint("TOPLEFT", button, "TOPLEFT", 6, -6)
+    icon:SetWidth(21) icon:SetHeight(21) icon:SetTexture("Interface\\Addons\\SimpleDenyManager\\deny_sign_64x64.tga") icon:SetPoint("TOPLEFT", button, "TOPLEFT", 6, -6)
     local border = button:CreateTexture(nil, "OVERLAY") border:SetWidth(56) border:SetHeight(56) border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder") border:SetPoint("TOPLEFT", button, "TOPLEFT", 0, 0)
     local function UpdatePosition()
         local angle = SimpleDeny_States.MinimapAngle or 0 button:ClearAllPoints() button:SetPoint("TOPLEFT", Minimap, "TOPLEFT", 52 - (80 * math.cos(angle)), (80 * math.sin(angle)) - 52)
